@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "siteName": "Nirosolar",
+    "brandName": "Woolar",
+    "legalName": "Woolar / Nirosolar Energy Inc.",
+    "tagline": "Experience the Future of Solar Power",
+    "title": "Nirosolar — Experience the Future of Solar Power | Renewable Energy Solutions",
+    "description": "Harness next-generation solar energy with Nirosolar. Tier-1 monocrystalline bifacial solar panels, smart battery storage, and up to $32,000+ in 25-year energy savings. Calculate your solar quote today.",
+    "canonicalUrl": "https://nirosolar.energy/",
+    "ogImage": "assets/hero-solar.jpg",
+    "twitterHandle": "@nirosolar",
+    "supportEmail": "hello@nirosolar.energy",
+    "securityEmail": "security@nirosolar.energy"
+  },
+  "navigation": {
+    "primaryLinks": [
+      { "id": "impact", "label": "Impact", "href": "#impact" },
+      { "id": "calculator", "label": "Calculator", "href": "#calculator" },
+      { "id": "technology", "label": "Technology", "href": "#technology" },
+      { "id": "about", "label": "About us", "href": "#about" }
+    ],
+    "cta": {
+      "label": "Get Started",
+      "action": "openModal"
+    }
+  },
+  "hero": {
+    "kicker": "More Power Efficiency",
+    "headline": "Experience the future\nof Solar Power.",
+    "cta": {
+      "label": "Get Started",
+      "action": "openModal"
+    },
+    "socialLinks": [
+      { "network": "Twitter", "url": "https://twitter.com/nirosolar", "label": "Twitter / X" },
+      { "network": "Instagram", "url": "https://instagram.com/nirosolar", "label": "Instagram" },
+      { "network": "LinkedIn", "url": "https://linkedin.com/company/nirosolar", "label": "LinkedIn" }
+    ],
+    "slides": [
+      {
+        "id": 1,
+        "title": "Experience the future\nof Solar Power.",
+        "image": "assets/mission-energy.jpg",
+        "cta": "Get Started"
+      },
+      {
+        "id": 2,
+        "title": "Next-Gen Monocrystalline\nBifacial Cells.",
+        "image": "assets/aerial-solar.jpg",
+        "cta": "Learn More"
+      },
+      {
+        "id": 3,
+        "title": "Zero Grid Outages with\nSmart LFP Storage.",
+        "image": "assets/timber-solar-home.jpg",
+        "cta": "View Storage"
+      },
+      {
+        "id": 4,
+        "title": "AI Generation Forecasting &\nMicroinverters.",
+        "image": "assets/serenity-steppe.jpg",
+        "cta": "Explore Tech"
+      },
+      {
+        "id": 5,
+        "title": "Over $32,000 in Cumulative\n25-Year Savings.",
+        "image": "assets/echoes-yurt.jpg",
+        "cta": "Calculate"
+      }
+    ]
+  },
+  "section2": {
+    "kicker": "More Energy More Savings",
+    "headline": "Experience the future of Solar Power.",
+    "cardPhoto": {
+      "title": "Making Everything\nFrom Nirosolar",
+      "savingLabel": "Saving-",
+      "savingValue": "610 kv",
+      "gaugeTargetAngle": 62,
+      "gaugeProgressValue": 68
+    },
+    "cardClean1": {
+      "icon": "sun",
+      "title": "Solar Energy Best\nProduction",
+      "description": "Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more."
+    },
+    "cardClean2": {
+      "icon": "house",
+      "title": "We Are Building\nBetter Future",
+      "description": "Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more."
+    }
+  },
+  "section3": {
+    "kicker": "More Energy More Savings",
+    "headline": "Energy Savings\nMade Easy With\nThe Solar",
+    "description": "Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more.",
+    "checklist": [
+      "Provides insights into budget performance.",
+      "Real-time microinverter production telemetry."
+    ],
+    "cta": {
+      "label": "Get Started",
+      "action": "openModal"
+    },
+    "visualImage": "assets/timber-solar-home.jpg",
+    "floatingWidget": {
+      "label": "Total Savings",
+      "number": "700",
+      "unit": "/kv",
+      "subtext": "Making everything\nof nirosolar"
+    }
+  },
+  "section4": {
+    "kicker": "More Energy More Savings",
+    "headline": "Transform Your Home's A Powerful Of The Force.",
+    "projects": [
+      {
+        "id": "mission-energy",
+        "image": "assets/mission-energy.jpg",
+        "badgeIcon": "sun",
+        "title": "The Mission Of Energy",
+        "description": "Renew Home is working with leading brands making there everything thermostats..."
+      },
+      {
+        "id": "serenity-steppe",
+        "image": "assets/serenity-steppe.jpg",
+        "badgeIcon": "house",
+        "title": "Serenity Of The Steppe",
+        "description": "Nestled in the vast, open grasslands, a traditional yurt stands as a symbol of nomadic heritage and..."
+      },
+      {
+        "id": "echoes-past",
+        "image": "assets/echoes-yurt.jpg",
+        "badgeIcon": "wind",
+        "title": "Echoes Of The Past",
+        "description": "A dusty rural road stretches into the horizon, flanked by weathered houses and towering utility..."
+      }
+    ]
+  },
+  "calculator": {
+    "kicker": "Interactive Energy Estimation",
+    "headline": "Calculate Your 25–Year Solar Savings",
+    "subtitle": "Accurate estimation calculated from regional solar irradiation and historical utility inflation.",
+    "parameters": {
+      "defaultMonthlyBill": 180,
+      "minBill": 40,
+      "maxBill": 800,
+      "step": 5,
+      "averageUtilityRatePerKWh": 0.185,
+      "annualUtilityInflationRate": 0.038,
+      "federalTaxCreditRate": 0.30,
+      "annualSunHoursPerDay": 4.8,
+      "costPerWattInstalled": 2.85,
+      "solarCoverageRatio": 0.95,
+      "annualPanelDegradationRate": 0.005
+    }
+  },
+  "process": {
+    "kicker": "Fast & Frictionless Deployment",
+    "headline": "Your Pathway To Clean Energy Autonomy",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Instant Satellite Assessment",
+        "description": "High-resolution LIDAR scans map roof pitch, shade vectors, and solar irradiance."
+      },
+      {
+        "number": "02",
+        "title": "Custom Microgrid Design",
+        "description": "Bespoke engineering layout pairing Tier-1 panels with smart battery backup."
+      },
+      {
+        "number": "03",
+        "title": "1-Day Certified Installation",
+        "description": "Master electricians mount, wire, and seal with a 10-year roof warranty."
+      },
+      {
+        "number": "04",
+        "title": "Activation & 24/7 Monitoring",
+        "description": "PTO utility interconnect approval and continuous real-time production tracking."
+      }
+    ]
+  },
+  "technology": {
+    "kicker": "Hardware Architecture",
+    "headline": "Tier-1 Clean Energy Infrastructure",
+    "specs": [
+      {
+        "badge": "440W BIFACIAL",
+        "title": "N-Type TOPCon Panels",
+        "description": "Dual-glass architecture capturing ambient reflected ground light with 22.8% module efficiency.",
+        "specs": {
+          "Cell Tech": "N-Type TOPCon",
+          "Efficiency": "22.8% Peak",
+          "Warranty": "25-Yr Performance"
+        }
+      },
+      {
+        "badge": "LFP STORAGE",
+        "title": "Smart Hybrid Battery",
+        "description": "Cobalt-free Lithium Iron Phosphate chemistry with 10ms microsecond grid failover.",
+        "specs": {
+          "Capacity": "13.5 kWh Modular",
+          "Chemistry": "Safe LFP",
+          "Failover": "<10ms Instant"
+        }
+      },
+      {
+        "badge": "MICROINVERTER",
+        "title": "Per-Panel IQ8+ Optimization",
+        "description": "Eliminates single-point system failures with panel-level MPPT tracking.",
+        "specs": {
+          "Architecture": "Decentralized",
+          "Safety": "Rapid Shutdown",
+          "Telemetry": "Per-Second Mesh"
+        }
+      }
+    ]
+  },
+  "testimonials": {
+    "kicker": "Verified Customer Experiences",
+    "headline": "Trusted By Over 12,000+ Clean Energy Homes",
+    "items": [
+      {
+        "name": "Marcus Vance",
+        "location": "Boulder, CO",
+        "quote": "Our monthly utility bill went from $340 to the $14 grid-connection minimum. The app makes monitoring solar production addictive.",
+        "system": "11.4 kW Bifacial + 20 kWh Battery"
+      },
+      {
+        "name": "Elena Rostova",
+        "location": "Austin, TX",
+        "quote": "When the grid went down last winter, our house had heat and power without a stutter. Seamless installation team.",
+        "system": "8.8 kW Solar Array"
+      },
+      {
+        "name": "David Chen",
+        "location": "San Diego, CA",
+        "quote": "The 25-year ROI calculator was within 4% of our actual first-year savings. Nirosolar handled all utility permits effortlessly.",
+        "system": "14.2 kW Solar + Dual Battery"
+      }
+    ]
+  },
+  "faqs": {
+    "kicker": "Clarity & Transparency",
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "q": "How much can I realistically save by switching to solar?",
+        "a": "Most residential customers save between 65% and 92% on their monthly electricity bills. Over 25 years, accounting for historical 3.8% annual utility inflation, average homeowner net savings exceed $32,000 to $54,000 depending on roof irradiance and system capacity."
+      },
+      {
+        "q": "What happens on cloudy days or during a winter freeze?",
+        "a": "Modern N-Type bifacial solar panels capture ambient diffuse radiation even through dense clouds, typically generating 20% to 40% of their peak output in overcast conditions. If paired with an integrated battery, stored daytime energy continues powering your home seamlessly."
+      },
+      {
+        "q": "How does the 30% Federal Clean Energy Tax Credit work?",
+        "a": "Under current clean energy legislation, homeowners who purchase a qualified residential solar system and battery storage receive a dollar-for-dollar tax credit equal to 30% of the entire system cost against their federal income tax liability."
+      },
+      {
+        "q": "Will solar panels damage my roof or cause leaks?",
+        "a": "No. Our mounting systems utilize engineered watertight flashing and lag bolts sealed with commercial-grade polyurethane membrane. In fact, panels actually shield your shingles from UV degradation and weather wear, extending roof life. We back every install with a 10-year roof penetration warranty."
+      }
+    ]
+  },
+  "ctaBanner": {
+    "title": "Ready To Power Your Future?",
+    "subtitle": "Get an instant 3D roof analysis and tailored solar proposal delivered in under 60 seconds with zero commitment.",
+    "placeholder": "Enter your ZIP code or street address",
+    "buttonText": "Get Started"
+  },
+  "footer": {
+    "description": "Pioneering clean energy independence through intelligent bifacial solar engineering and smart residential microgrids.",
+    "gridUptime": "99.98% System Uptime",
+    "copyright": "© 2026 Woolar / Nirosolar Energy Inc. All rights reserved."
+  }
+}

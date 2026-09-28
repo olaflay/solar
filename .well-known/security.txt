@@ -1,0 +1,7 @@
+# RFC 9116 Security Vulnerability Disclosure Protocol
+Contact: mailto:security@nirosolar.energy
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://nirosolar.energy/.well-known/security.txt
+Policy: https://nirosolar.energy/security-policy.html
+Acknowledgments: https://nirosolar.energy/hall-of-fame.html

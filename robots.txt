@@ -1,0 +1,27 @@
+# ==============================================================================
+# Robots.txt for Nirosolar / Woolar Renewable Solar Energy Platform
+# Compliant with Googlebot, Bingbot, Applebot, and standard web crawlers.
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /data/
+
+# Disallow internal documentation, drafts, and administrative artifacts
+Disallow: /docs/
+Disallow: /brain/
+Disallow: /.git/
+Disallow: /.system_generated/
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl-rate optimization (polite crawling interval)
+Crawl-delay: 1
+
+# XML Sitemaps location
+Sitemap: https://nirosolar.energy/sitemap.xml
+Sitemap: http://localhost:8000/sitemap.xml

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Primary Canonical Landing Page -->
+  <url>
+    <loc>https://nirosolar.energy/</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Interactive 25-Year Solar ROI Calculator -->
+  <url>
+    <loc>https://nirosolar.energy/#calculator</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Sustainability & Energy Impact -->
+  <url>
+    <loc>https://nirosolar.energy/#impact</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Hardware & Battery Architecture Specifications -->
+  <url>
+    <loc>https://nirosolar.energy/#technology</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Residential Projects & Transformation Case Studies -->
+  <url>
+    <loc>https://nirosolar.energy/#projects</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Customer Reviews & Trust Badges -->
+  <url>
+    <loc>https://nirosolar.energy/#testimonials</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Clean Energy FAQ & Tax Credit Knowledge Base -->
+  <url>
+    <loc>https://nirosolar.energy/#faq</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Company Overview & Contact Information -->
+  <url>
+    <loc>https://nirosolar.energy/#about</loc>
+    <lastmod>2026-09-28T09:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Canonical URL & Manifest -->
+  <link rel="canonical" href="https://nirosolar.energy/">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0e1713">
+
+  <!-- SEO & Social Meta Tags -->
+  <title>Nirosolar — Experience the Future of Solar Power | Renewable Energy Solutions</title>
+  <meta name="description" content="Harness next-generation solar energy with Nirosolar. Tier-1 monocrystalline bifacial solar panels, smart battery storage, and up to $32,000+ in 25-year energy savings. Calculate your solar quote today.">
+  <meta name="keywords" content="solar power, renewable energy, solar panels, nirosolar, clean energy, residential solar, solar battery storage">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nirosolar.energy/">
+  <meta property="og:site_name" content="Nirosolar">
+  <meta property="og:title" content="Nirosolar — Experience the Future of Solar Power">
+  <meta property="og:description" content="Experience high-efficiency residential solar engineering. Zero-down financing, 25-year warranty, and real-time generation tracking.">
+  <meta property="og:image" content="https://nirosolar.energy/assets/hero-solar.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@nirosolar">
+  <meta name="twitter:title" content="Nirosolar — Experience the Future of Solar Power">
+  <meta name="twitter:description" content="Experience high-efficiency residential solar engineering. Zero-down financing, 25-year warranty, and real-time generation tracking.">
+  <meta name="twitter:image" content="https://nirosolar.energy/assets/hero-solar.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fbbf24'><circle cx='12' cy='12' r='5'/><path stroke='%23fbbf24' stroke-width='2' stroke-linecap='round' d='M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41m14.14-14.14l-1.41 1.41'/></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER / FLOATING FROSTED GLASS PILL NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo (Woolar with circular monogram icon from download.jpg) -->
+      <a href="#" class="brand-logo" aria-label="Woolar Home">
+        <span class="brand-icon-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M7 8.5L9.5 15.5L12 9.5L14.5 15.5L17 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Woolar</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (Reduced, Clean Text Links without inner pill/border) -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#impact" class="nav-link">Impact</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#technology" class="nav-link">Technology</a>
+        <a href="#about" class="nav-link">About us</a>
+      </nav>
+
+      <!-- Header Actions: CTA Button & Mobile Hamburger -->
+      <div class="header-actions">
+        <button class="btn btn-white btn-header-cta trigger-quote-modal" id="headerCtaBtn">
+          <span>Get Started</span>
+          <span class="btn-arrow" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </button>
+
+        <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Open mobile navigation menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close navigation drawer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <nav class="mobile-nav-links">
+      <a href="#impact" class="nav-link">Impact</a>
+      <a href="#calculator" class="nav-link">Calculator</a>
+      <a href="#technology" class="nav-link">Technology</a>
+      <a href="#about" class="nav-link">About us</a>
+    </nav>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <button class="btn btn-primary trigger-quote-modal" style="width: 100%;">
+        <span>Get Started</span>
+        <span class="btn-arrow" aria-hidden="true">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="mainContent">
+
+    <!-- HERO SECTION (Forensic match to download.jpg) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        
+        <!-- Left Hero Copy -->
+        <div class="hero-left">
+          <p class="hero-kicker">More Power Efficiency</p>
+          <h1 class="hero-title">Experience the future<br>of Solar Power.</h1>
+          
+          <div class="hero-cta-group">
+            <button class="btn btn-white trigger-quote-modal" id="heroCtaBtn">
+              <span>Get Started</span>
+              <span class="btn-arrow" aria-hidden="true">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Social Media Handles (download.jpg: directly underneath Get Started button) -->
+          <div class="social-links" aria-label="Social links">
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Card Widget (Horizontal Compact Card matching download.jpg) -->
+        <aside class="hero-floating-card" aria-label="Featured Story">
+          <div class="floating-card-counter-bar">
+            <span class="floating-card-counter">1/5</span>
+            <div class="floating-card-nav-btns">
+              <button class="nav-icon-btn btn-slide-prev" aria-label="Previous slide">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="nav-icon-btn btn-slide-next" aria-label="Next slide">
+                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+          
+          <div class="floating-card-content-wrap">
+            <div class="floating-card-thumb-wrap">
+              <img src="assets/mission-energy.jpg" alt="Solar & Wind Farm" loading="lazy">
+            </div>
+            <div class="floating-card-details">
+              <p class="floating-card-title">Experience the future<br>of Solar Power.</p>
+              <button class="btn btn-mini-cta trigger-quote-modal">
+                <span>Get Started</span>
+                <span class="btn-arrow" aria-hidden="true">
+                  <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: VALUE PROPOSITIONS (download.jpg Section 2) -->
+    <section class="section" id="impact">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">More Energy More Savings</span>
+          <h2 class="section-title">Experience the future of Solar Power.</h2>
+        </header>
+
+        <div class="features-grid">
+          
+          <!-- Card 1: Photographic with Aerial & Speedometer -->
+          <article class="feature-card feature-card-photo">
+            <h3 class="feature-card-photo-title">Making Everything<br>From Nirosolar</h3>
+            
+            <div class="feature-card-photo-footer">
+              <div class="saving-badge-pill">
+                <span class="saving-label">Saving-</span>
+                <span class="saving-val">610 kv</span>
+              </div>
+              
+              <!-- Speedometer Gauge Dial (Forensic match to download.jpg: luminous white dial with tick marks & needle) -->
+              <div class="speedometer-widget" aria-label="Energy Speedometer">
+                <svg class="speedometer-svg" viewBox="0 0 100 100">
+                  <circle class="gauge-track" cx="50" cy="50" r="38"></circle>
+                  <circle class="gauge-progress" cx="50" cy="50" r="38"></circle>
+                  <path class="gauge-ticks" d="M 18 68 L 22 65 M 14 50 L 19 50 M 18 32 L 22 35 M 26 21 L 29 25 M 38 14 L 40 19 M 50 12 L 50 17 M 62 14 L 60 19 M 74 21 L 71 25 M 82 32 L 78 35 M 86 50 L 81 50 M 82 68 L 78 65" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line class="gauge-needle" x1="50" y1="50" x2="68" y2="32"></line>
+                  <circle class="gauge-hub" cx="50" cy="50" r="4.5"></circle>
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Solar Energy Best Production -->
+          <article class="feature-card feature-card-clean">
+            <div class="card-icon-bubble">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Solar Energy Best<br>Production</h3>
+            <p class="feature-card-text">
+              Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more.
+            </p>
+          </article>
+
+          <!-- Card 3: We Are Building Better Future -->
+          <article class="feature-card feature-card-clean">
+            <div class="card-icon-bubble">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 3 2 12h3v8h6v-5h2v5h6v-8h3L12 3z"/>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">We Are Building<br>Better Future</h3>
+            <p class="feature-card-text">
+              Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SPLIT SECTION (download.jpg Section 3) -->
+    <section class="section" id="nest-renew" style="padding-top: 0.5rem;">
+      <div class="container">
+        <div class="split-grid">
+          
+          <!-- Left Column Content -->
+          <div class="split-content">
+            <span class="section-kicker">More Energy More Savings</span>
+            <h2 class="split-title">Energy Savings<br>Made Easy With<br>The Solar</h2>
+            <p class="split-desc">
+              Solar energy is the radiant light and heat emitted by the sun, harnessed through various technologies to generate electricity or heat. It's a renewable energy source, meaning it won't run out as long as the sun shines, making it more.
+            </p>
+
+            <ul class="feature-checklist">
+              <li class="checklist-item">
+                <span class="check-icon">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Provides insights into budget performance.</span>
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span>Provides insights into budget performance.</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary trigger-quote-modal" id="splitCtaBtn">
+              <span>Get Started</span>
+              <span class="btn-arrow" aria-hidden="true">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Right Column Visual with Floating Savings Widget (download.jpg) -->
+          <div class="split-visual-container">
+            <img src="assets/timber-solar-home.jpg" alt="Modern Scandinavian solar home in countryside meadow" class="split-visual-img" loading="lazy">
+            
+            <div class="split-floating-widget">
+              <p class="widget-label">Total Savings</p>
+              <div class="widget-stat-row">
+                <div class="widget-stat-icon-wrap">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <span class="widget-stat-number">700 <small style="font-size: 12px; font-weight: normal; opacity: 0.85;">/kv</small></span>
+              </div>
+              <div class="widget-subtext">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                </svg>
+                <span>Making everything of nirosolar</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROJECTS / TRANSFORMATION GALLERY (download.jpg Section 4) -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">More Energy More Savings</span>
+          <h2 class="section-title">Transform Your Home's A Powerful Of The Force.</h2>
+        </header>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: The Mission Of Energy -->
+          <article class="project-card">
+            <img src="assets/mission-energy.jpg" alt="Wind turbines and vast solar collectors" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-content">
+              <div class="project-icon-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                </svg>
+              </div>
+              <h3 class="project-card-title">The Mission Of Energy</h3>
+              <p class="project-card-desc">
+                Renew Home is working with leading brands making there everything thermostats...
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 2: Serenity Of The Steppe -->
+          <article class="project-card">
+            <img src="assets/serenity-steppe.jpg" alt="Rural steppe sunset with modern power infrastructure" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-content">
+              <div class="project-icon-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3 2 12h3v8h6v-5h2v5h6v-8h3L12 3z"/>
+                </svg>
+              </div>
+              <h3 class="project-card-title">Serenity Of The Steppe</h3>
+              <p class="project-card-desc">
+                Nestled in the vast, open grasslands, a traditional yurt stands as a symbol of nomadic heritage and...
+              </p>
+            </div>
+          </article>
+
+          <!-- Project 3: Echoes Of The Past -->
+          <article class="project-card">
+            <img src="assets/echoes-yurt.jpg" alt="Autonomous solar yurt outpost on grassland" class="project-card-img" loading="lazy">
+            <div class="project-card-overlay"></div>
+            <div class="project-card-content">
+              <div class="project-icon-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M12 2v7"></path>
+                  <path d="m4.93 19.07 4.95-4.95"></path>
+                  <path d="m19.07 19.07-4.95-4.95"></path>
+                </svg>
+              </div>
+              <h3 class="project-card-title">Echoes Of The Past</h3>
+              <p class="project-card-desc">
+                A dusty rural road stretches into the horizon, flanked by weathered houses and towering utility...
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: INTERACTIVE SOLAR ROI CALCULATOR (Added Conversion Engine) -->
+    <section class="section calc-section" id="calculator">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">Interactive Energy Estimation</span>
+          <h2 class="section-title">Calculate Your 25-Year Solar Savings</h2>
+        </header>
+
+        <div class="calc-wrapper">
+          
+          <!-- Controls Panel -->
+          <div class="calc-controls">
+            
+            <div class="calc-slider-group">
+              <div class="calc-slider-header">
+                <label for="billSlider" class="calc-slider-label">Average Monthly Electric Bill</label>
+                <span class="calc-slider-val" id="billValueDisplay">$180</span>
+              </div>
+              <input type="range" min="60" max="600" step="10" value="180" class="calc-range-input" id="billSlider" aria-label="Monthly Electric Bill">
+              <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--color-text-tertiary);">
+                <span>$60/mo</span>
+                <span>$300/mo</span>
+                <span>$600/mo</span>
+              </div>
+            </div>
+
+            <div>
+              <p class="calc-slider-label" style="margin-bottom: 6px;">Roof Composition</p>
+              <div class="calc-segmented-control" role="group" aria-label="Roof Composition">
+                <button type="button" class="calc-seg-btn active" data-factor="1.0">Composite Shingle</button>
+                <button type="button" class="calc-seg-btn" data-factor="1.08">Standing Seam Metal</button>
+                <button type="button" class="calc-seg-btn" data-factor="1.15">Spanish Clay Tile</button>
+              </div>
+            </div>
+
+            <div style="background: var(--color-surface-soft); padding: 12px 14px; border-radius: var(--radius-md); font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; border: 1px solid var(--border-subtle);">
+              <span style="color: var(--color-eco-emerald); font-weight: bold;">⚡ Inflation Hedge:</span> Utility electricity rates have escalated an average of 3.8% annually nationwide. Locking in solar production eliminates unpredictable utility price surges.
+            </div>
+
+            <button class="btn btn-primary trigger-quote-modal" style="width: 100%;">
+              <span>Claim My Custom Roof Assessment</span>
+              <span class="btn-arrow" aria-hidden="true">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Live Output Panel -->
+          <div class="calc-results-panel">
+            <h3 style="font-size: 1rem; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 10px;">Your System Estimation</h3>
+            
+            <div class="results-metric-grid">
+              <div class="result-card">
+                <p class="result-card-label">Recommended System</p>
+                <p class="result-card-val highlight" id="calcSystemSize">8.6 kW</p>
+              </div>
+
+              <div class="result-card">
+                <p class="result-card-label">Est. 1st Year Savings</p>
+                <p class="result-card-val eco" id="calcAnnualSavings">$1,685/yr</p>
+              </div>
+
+              <div class="result-card">
+                <p class="result-card-label">25-Yr Net Savings</p>
+                <p class="result-card-val" id="calcLifetimeSavings">$38,420</p>
+              </div>
+
+              <div class="result-card">
+                <p class="result-card-label">CO2 Carbon Offset</p>
+                <p class="result-card-val" id="calcCo2Offset">9.4 Tons</p>
+              </div>
+            </div>
+
+            <!-- Comparison Bar Graph -->
+            <div class="chart-comparison-wrap">
+              <p style="font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(255,255,255,0.7);">25-Year Cumulative Spend</p>
+              
+              <div class="chart-bars-wrap">
+                <div class="chart-bar-row">
+                  <span class="chart-bar-label">Without Solar:</span>
+                  <div class="chart-bar-track">
+                    <div class="chart-bar-fill utility" id="barUtility" style="width: 100%;"></div>
+                  </div>
+                  <span class="chart-bar-val" id="valUtility">$84,100</span>
+                </div>
+
+                <div class="chart-bar-row">
+                  <span class="chart-bar-label">With Nirosolar:</span>
+                  <div class="chart-bar-track">
+                    <div class="chart-bar-fill solar" id="barSolar" style="width: 28%;"></div>
+                  </div>
+                  <span class="chart-bar-val" id="valSolar">$18,200</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">White-Glove Process</span>
+          <h2 class="section-title">Zero Friction. Seamless Solar Installation.</h2>
+        </header>
+
+        <div class="steps-grid">
+          
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3 class="step-title">3D Satellite Roof Scan</h3>
+            <p class="step-desc">Our LiDAR modeling algorithms map your roof's precise pitch, shading azimuth, and structural integrity in under 5 minutes without invasive home visits.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Custom Solar Engineering</h3>
+            <p class="step-desc">Master electricians design a bespoke electrical blueprint, securing all municipal permits, HOA approvals, and utility interconnection paperwork on your behalf.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3 class="step-title">1-Day Certified Install</h3>
+            <p class="step-desc">NABCEP-certified installation crews mount Tier-1 panels with weather-sealed flashing and microinverters in a clean, non-intrusive single-day deployment.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h3 class="step-title">App Grid Interconnection</h3>
+            <p class="step-desc">Flip the switch to free solar energy. Monitor per-panel generation, battery reserves, and earn utility credits through bidirectional smart net metering.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: TECHNOLOGY & HARDWARE ARCHITECTURE -->
+    <section class="section" id="technology" style="background: var(--color-surface-soft);">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">Hardware Excellence</span>
+          <h2 class="section-title">Engineered For Decades of Relentless Performance</h2>
+        </header>
+
+        <div class="tech-grid">
+          
+          <div class="tech-card">
+            <span class="tech-badge">22.8% Efficiency</span>
+            <h3 class="tech-title">N-Type Bifacial Monocrystalline</h3>
+            <p class="feature-card-text">Dual-sided glass modules harvest sunlight from both direct rays and ambient ground reflection, generating up to 25% extra energy in low light conditions.</p>
+            <div class="tech-spec-list">
+              <div class="tech-spec-item"><span>Cell Technology:</span><span>TOPCon Half-Cut</span></div>
+              <div class="tech-spec-item"><span>Linear Warranty:</span><span>25-Year 85% Output</span></div>
+              <div class="tech-spec-item"><span>Hail Rating:</span><span>Class 4 (25mm at 80km/h)</span></div>
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-badge">99.5% MPPT</span>
+            <h3 class="tech-title">Smart Decentralized Microinverters</h3>
+            <p class="feature-card-text">Every panel functions independently. If a single panel experiences autumn leaf shade, the rest of your system continues producing peak power uninterrupted.</p>
+            <div class="tech-spec-list">
+              <div class="tech-spec-item"><span>Safety Feature:</span><span>Rapid Shutdown (NEC 690.12)</span></div>
+              <div class="tech-spec-item"><span>Grid Standard:</span><span>IEEE 1547 Compliant</span></div>
+              <div class="tech-spec-item"><span>Telemetry:</span><span>Sub-Second Wi-Fi Mesh</span></div>
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <span class="tech-badge">LFP Chemistry</span>
+            <h3 class="tech-title">Integrated Home Battery Storage</h3>
+            <p class="feature-card-text">High-density Lithium Iron Phosphate chemistry provides thermal stability, zero fire risk, and whole-home backup during severe grid outages and storms.</p>
+            <div class="tech-spec-list">
+              <div class="tech-spec-item"><span>Usable Capacity:</span><span>13.5 kWh / Module</span></div>
+              <div class="tech-spec-item"><span>Cycle Life:</span><span>10,000+ Cycles (90% DoD)</span></div>
+              <div class="tech-spec-item"><span>Switchover Time:</span><span>&lt; 10ms Seamless</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: SOCIAL PROOF & TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">Verified Homeowners</span>
+          <h2 class="section-title">Trusted By Thousands of Clean Energy Pioneers</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"Our electric bill dropped from $260/month to literally $14/month in grid access fees. The installation was done by 3 PM and the smartphone app lets us watch our energy production live."</p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">JD</div>
+              <div class="author-info">
+                <h4>Julianna Davies</h4>
+                <p>Austin, TX • 9.2 kW System Installed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"During the winter storms last year, the whole neighborhood lost power for 18 hours. Our Nirosolar battery kicked in within milliseconds—our heat and refrigerator stayed on with zero interruption."</p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">MS</div>
+              <div class="author-info">
+                <h4>Marcus Sörensen</h4>
+                <p>Boulder, CO • 11.4 kW + 2x Batteries</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating-stars">★★★★★</div>
+            <p class="testimonial-quote">"The team handled 100% of the permits and HOA paperwork. The 30% federal tax credit was simple to claim with their documentation. One of the best home investments we've ever made."</p>
+            <div class="testimonial-author-row">
+              <div class="author-avatar">EL</div>
+              <div class="author-info">
+                <h4>Elena Lindqvist</h4>
+                <p>Stockholm, SE • 7.6 kW System Installed</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Trust Badges Bar -->
+        <div class="trust-badges-bar">
+          <div class="trust-badge-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-eco-green)" stroke-width="2.2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>25-Year Linear Power Warranty</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="var(--color-solar-amber)">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>4.9 / 5 Rating (2,400+ Verified Reviews)</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-blue)" stroke-width="2.5">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>NABCEP Certified Solar Engineers</span>
+          </div>
+          <div class="trust-badge-item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-eco-emerald)" stroke-width="2">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+            <span>100% Carbon Neutral Operations</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: FAQ ACCORDION -->
+    <section class="section" id="faq">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </header>
+
+        <div class="faq-container">
+          
+          <div class="faq-item active">
+            <button class="faq-question-btn">
+              <span>How does net metering work with my local utility?</span>
+              <span class="faq-icon">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              When your solar panels generate more electricity than your home consumes during peak sunshine hours, the surplus power is automatically sent back to the electrical grid. Your utility meter spins backward, giving you bill credits that offset any power you draw at night.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>What happens on cloudy or rainy days?</span>
+              <span class="faq-icon">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Modern N-Type bifacial solar panels capture ambient diffuse radiation even through dense clouds, typically generating 20% to 40% of their peak output in overcast conditions. If paired with an integrated battery, stored daytime energy continues powering your home seamlessly.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>How does the 30% Federal Clean Energy Tax Credit work?</span>
+              <span class="faq-icon">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              Under current clean energy legislation, homeowners who purchase a qualified residential solar system and battery storage receive a dollar-for-dollar tax credit equal to 30% of the entire system cost against their federal income tax liability.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question-btn">
+              <span>Will solar panels damage my roof or cause leaks?</span>
+              <span class="faq-icon">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              No. Our mounting systems utilize engineered watertight flashing and lag bolts sealed with commercial-grade polyurethane membrane. In fact, panels actually shield your shingles from UV degradation and weather wear, extending roof life. We back every install with a 10-year roof penetration warranty.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CONVERSION CTA BANNER -->
+    <section class="section" style="padding-top: 0.5rem;">
+      <div class="container">
+        <div class="cta-banner-card">
+          <h2 class="cta-banner-title">Ready To Power Your Future?</h2>
+          <p class="cta-banner-subtitle">Get an instant 3D roof analysis and tailored solar proposal delivered in under 60 seconds with zero commitment.</p>
+          
+          <form class="cta-form-inline" id="quickCtaForm" onsubmit="event.preventDefault(); document.getElementById('quoteModal').classList.add('active');">
+            <input type="text" class="cta-input" placeholder="Enter your ZIP code or street address" required>
+            <button type="submit" class="btn btn-white">
+              <span>Get Started</span>
+              <span class="btn-arrow" aria-hidden="true">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" style="color: #ffffff;">
+            <span>Woolar</span>
+          </a>
+          <p>Pioneering clean energy independence through intelligent bifacial solar engineering and smart residential microgrids.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#calculator">Solar ROI Calculator</a></li>
+            <li><a href="#technology">Bifacial Solar Panels</a></li>
+            <li><a href="#technology">Smart Battery Storage</a></li>
+            <li><a href="#nest-renew">Grid Autonomy & EV Charging</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about">About Nirosolar</a></li>
+            <li><a href="#impact">Sustainability Impact</a></li>
+            <li><a href="#projects">Customer Case Studies</a></li>
+            <li><a href="#testimonials">Reviews & Press</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Legal & Security</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">25-Year Warranty Terms</a></li>
+            <li><a href="#">Installer Licensing & Permits</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Woolar / Nirosolar Energy Inc. All rights reserved.
+        </div>
+        
+        <div class="footer-status-pill">
+          <span class="status-dot"></span>
+          <span>Grid Monitoring: 99.98% System Uptime</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MODAL: INSTANT SOLAR ESTIMATE -->
+  <div class="modal-overlay" id="quoteModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close modal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      
+      <div class="modal-body-content">
+        <h3 class="modal-title" id="modalHeading">Get Your Custom Solar Estimate</h3>
+        <p class="modal-subtitle">Instant satellite roof calculation with local solar incentives.</p>
+
+        <form id="solarQuoteForm">
+          <div class="modal-form-group">
+            <label for="modalZip" class="modal-form-label">Property ZIP Code</label>
+            <input type="text" id="modalZip" class="modal-form-input" placeholder="e.g. 90210" required>
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modalBill" class="modal-form-label">Average Monthly Power Bill ($)</label>
+            <input type="number" id="modalBill" class="modal-form-input" placeholder="e.g. 180" value="180" min="40" max="1000" required>
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modalEmail" class="modal-form-label">Email Address (For your 3D report)</label>
+            <input type="email" id="modalEmail" class="modal-form-input" placeholder="you@example.com" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            <span>Generate Instant Solar Blueprint</span>
+            <span class="btn-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts (Zero-Hardcoding Runtime Environment + Master Configuration + Hydration Engine) -->
+  <script src="js/env.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

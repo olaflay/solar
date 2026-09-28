@@ -1,0 +1,162 @@
+/**
+ * Nirosolar / Woolar Design System Tokens
+ * Standard: CSS Custom Properties (Variables)
+ * Refined: Compact Standard Sizing, Clean Responsive Glassmorphism
+ */
+
+:root {
+  /* ==========================================================================
+     COLOR TOKENS
+     ========================================================================== */
+  /* Canvas & Backgrounds */
+  --color-canvas: #f6f8f7;
+  --color-surface-white: #ffffff;
+  --color-surface-soft: #eef3f0;
+  --color-surface-muted: #e2eae5;
+  --color-surface-dark: #0e1713;
+  --color-surface-dark-card: #14201a;
+
+  /* Refined Glassmorphism Tokens (Crisp, Frosted, Never Muddy) */
+  --glass-bg-light: rgba(255, 255, 255, 0.78);
+  --glass-bg-subtle: rgba(255, 255, 255, 0.55);
+  --glass-bg-dark: rgba(14, 23, 19, 0.72);
+  --glass-bg-card: rgba(14, 23, 19, 0.65);
+  --glass-bg-pill: rgba(0, 0, 0, 0.55);
+  
+  --glass-border-light: rgba(255, 255, 255, 0.35);
+  --glass-border-dark: rgba(255, 255, 255, 0.18);
+  --glass-border-highlight: rgba(255, 255, 255, 0.28);
+  
+  --glass-blur: blur(14px);
+  --glass-blur-sm: blur(8px);
+  --glass-blur-lg: blur(20px);
+
+  /* Typography / Text Colors */
+  --color-text-primary: #0d1512;
+  --color-text-secondary: #485950;
+  --color-text-tertiary: #6e8076;
+  --color-text-muted: #8e9e96;
+  --color-text-inverse: #ffffff;
+  --color-text-inverse-muted: rgba(255, 255, 255, 0.82);
+  --color-text-inverse-dim: rgba(255, 255, 255, 0.55);
+
+  /* Solar Energy & Eco Accents */
+  --color-brand-primary: #0e1713;
+  --color-brand-primary-hover: #182720;
+  --color-solar-amber: #f59e0b;
+  --color-solar-amber-light: #fef3c7;
+  --color-solar-gold: #fbbf24;
+  --color-eco-green: #10b981;
+  --color-eco-green-light: #d1fae5;
+  --color-eco-emerald: #059669;
+  --color-eco-cyan: #06b6d4;
+  --color-accent-blue: #0284c7;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(13, 21, 18, 0.08);
+  --border-medium: rgba(13, 21, 18, 0.15);
+  --border-strong: rgba(13, 21, 18, 0.25);
+  --border-dark-subtle: rgba(255, 255, 255, 0.12);
+
+  /* ==========================================================================
+     TYPOGRAPHY TOKENS (Standard Compact Scale)
+     ========================================================================== */
+  --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Standard Compact Sizes */
+  --font-size-2xs: 0.6875rem; /* 11px */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-base: 0.875rem; /* 14px */
+  --font-size-md: 0.9375rem;  /* 15px */
+  --font-size-lg: 1.0625rem;  /* 17px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  
+  /* Fluid Scaled Headings (Compact, Proportionate, Mobile-Perfect) */
+  --font-display-hero: clamp(1.85rem, 3.8vw + 0.5rem, 3.75rem);
+  --font-display-section: clamp(1.45rem, 2.5vw + 0.35rem, 2.45rem);
+  --font-display-card: clamp(1.05rem, 1.2vw + 0.45rem, 1.35rem);
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.15;
+  --leading-snug: 1.28;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.65;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.035em;
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+
+  /* ==========================================================================
+     SPACING & LAYOUT TOKENS (Compact, Balanced)
+     ========================================================================== */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  --container-max-width: 1180px;
+  --container-narrow-width: 860px;
+  --section-gutter: clamp(1rem, 3vw, 2rem);
+  --section-padding-y: clamp(3.25rem, 6vw, 5.25rem);
+
+  /* ==========================================================================
+     BORDER RADII TOKENS (Sleek, Modern)
+     ========================================================================== */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
+  --radius-pill: 9999px;
+  --radius-circle: 50%;
+
+  /* ==========================================================================
+     ELEVATION & SHADOW TOKENS
+     ========================================================================== */
+  --shadow-subtle: 0 2px 6px rgba(13, 21, 18, 0.03);
+  --shadow-card: 0 8px 24px -4px rgba(13, 21, 18, 0.06), 0 2px 6px -1px rgba(13, 21, 18, 0.03);
+  --shadow-elevated: 0 16px 36px -8px rgba(13, 21, 18, 0.1), 0 4px 12px -2px rgba(13, 21, 18, 0.04);
+  --shadow-hover: 0 20px 40px -10px rgba(13, 21, 18, 0.14), 0 6px 16px -3px rgba(13, 21, 18, 0.06);
+  --shadow-glass: 0 8px 28px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  --shadow-glow-solar: 0 0 20px rgba(245, 158, 11, 0.3);
+  --shadow-glow-eco: 0 0 20px rgba(16, 185, 129, 0.3);
+
+  /* ==========================================================================
+     ANIMATION & TRANSITION TOKENS
+     ========================================================================== */
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 360ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ==========================================================================
+     Z-INDEX HIERARCHY
+     ========================================================================== */
+  --z-base: 1;
+  --z-floating: 10;
+  --z-sticky: 100;
+  --z-header: 500;
+  --z-drawer: 800;
+  --z-modal: 1000;
+}
