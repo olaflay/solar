@@ -208,11 +208,11 @@ ul, ol {
 }
 
 .site-header.scrolled .header-container {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--header-glass-scrolled-bg);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--header-glass-scrolled-border);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .brand-logo {
@@ -241,7 +241,7 @@ ul, ol {
 
 .site-header.scrolled .brand-logo,
 .site-header.scrolled .brand-icon-mark {
-  color: var(--color-text-primary);
+  color: var(--header-scrolled-text);
 }
 
 /* Desktop Navigation Menu (No inner pill background or border) */
@@ -278,13 +278,13 @@ ul, ol {
 }
 
 .site-header.scrolled .nav-link {
-  color: var(--color-text-secondary);
+  color: var(--header-scrolled-text-subtle);
 }
 
 .site-header.scrolled .nav-link:hover,
 .site-header.scrolled .nav-link.active {
-  background: rgba(0, 0, 0, 0.06);
-  color: var(--color-text-primary);
+  background: var(--border-subtle);
+  color: var(--header-scrolled-text);
   box-shadow: none;
 }
 
@@ -304,20 +304,20 @@ ul, ol {
 }
 
 .site-header.scrolled .btn-header-cta {
-  background-color: var(--color-brand-primary);
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(14, 23, 19, 0.2);
+  background-color: var(--header-scrolled-cta-bg);
+  color: var(--header-scrolled-cta-text);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 .site-header.scrolled .btn-header-cta .btn-arrow {
-  background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  background: var(--border-medium);
+  color: var(--header-scrolled-cta-text);
 }
 
 .site-header.scrolled .btn-header-cta:hover {
-  background-color: var(--color-brand-primary-hover);
+  filter: brightness(1.1);
   transform: translateY(-1.5px);
-  box-shadow: 0 6px 18px rgba(14, 23, 19, 0.28);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .hamburger-btn {
@@ -341,9 +341,9 @@ ul, ol {
 }
 
 .site-header.scrolled .hamburger-btn {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.1);
-  color: var(--color-text-primary);
+  background: var(--border-subtle);
+  border-color: var(--border-medium);
+  color: var(--header-scrolled-text);
 }
 
 /* ==========================================================================
@@ -352,7 +352,7 @@ ul, ol {
 .mobile-drawer-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.68);
   backdrop-filter: blur(4px);
   z-index: var(--z-drawer);
   opacity: 0;
@@ -371,12 +371,14 @@ ul, ol {
   right: -280px;
   width: 250px;
   height: 100%;
-  background: #ffffff;
+  background: var(--drawer-bg);
+  color: var(--color-text-primary);
+  border-left: 1px solid var(--border-subtle);
   z-index: calc(var(--z-drawer) + 1);
   padding: var(--space-5);
   display: flex;
   flex-direction: column;
-  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.18);
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.25);
   transition: right var(--transition-smooth);
 }
 
@@ -788,10 +790,10 @@ ul, ol {
   stroke: rgba(255, 255, 255, 0.45);
 }
 
-/* Feature Cards 2 & 3: Clean Light Cards (download.jpg) */
+/* Feature Cards 2 & 3: Clean Cards with Theme Awareness */
 .feature-card-clean {
-  background: #f6f8f7;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--color-surface-card);
+  border: 1px solid var(--border-subtle);
   padding: var(--space-6);
   display: flex;
   flex-direction: column;
@@ -803,15 +805,15 @@ ul, ol {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #eef2f0;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: var(--card-icon-bg);
+  border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #111827;
+  color: var(--card-icon-color);
   margin-bottom: var(--space-4);
   flex-shrink: 0;
-  transition: transform var(--transition-base), background var(--transition-base);
+  transition: transform var(--transition-base), background var(--transition-base), color var(--transition-base);
 }
 
 .card-icon-bubble svg {
@@ -822,7 +824,7 @@ ul, ol {
 
 .feature-card-clean:hover .card-icon-bubble {
   transform: scale(1.08);
-  background: var(--color-solar-amber-light);
+  background: var(--color-solar-amber-bg);
   color: var(--color-solar-amber);
 }
 
@@ -830,6 +832,7 @@ ul, ol {
   font-size: var(--font-display-card);
   font-weight: var(--weight-bold);
   line-height: var(--leading-snug);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-3);
 }
 
@@ -1086,13 +1089,13 @@ ul, ol {
    SECTION 5: INTERACTIVE SOLAR CALCULATOR (Compact, Sleek)
    ========================================================================== */
 .calc-section {
-  background: var(--color-surface-soft);
+  background: var(--color-canvas-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
 }
 
 .calc-wrapper {
-  background: #ffffff;
+  background: var(--calc-wrapper-bg);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-subtle);
   padding: clamp(1.5rem, 3.5vw, 2.25rem);
@@ -1130,7 +1133,7 @@ ul, ol {
 .calc-slider-val {
   font-size: var(--font-size-xl);
   font-weight: var(--weight-bold);
-  color: var(--color-brand-primary);
+  color: var(--color-text-primary);
 }
 
 .calc-range-input {
@@ -1147,9 +1150,10 @@ ul, ol {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4px;
-  background: var(--color-surface-soft);
+  background: var(--calc-seg-bg);
   padding: 3px;
   border-radius: var(--radius-pill);
+  border: 1px solid var(--border-subtle);
 }
 
 .calc-seg-btn {
@@ -1162,8 +1166,8 @@ ul, ol {
 }
 
 .calc-seg-btn.active {
-  background: #ffffff;
-  color: var(--color-text-primary);
+  background: var(--calc-seg-active-bg);
+  color: var(--calc-seg-active-text);
   box-shadow: var(--shadow-subtle);
 }
 
@@ -1290,7 +1294,7 @@ ul, ol {
 }
 
 .step-card {
-  background: #ffffff;
+  background: var(--color-surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
@@ -1323,6 +1327,7 @@ ul, ol {
 .step-title {
   font-size: var(--font-size-sm);
   font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
   margin-bottom: 4px;
 }
 
@@ -1342,7 +1347,7 @@ ul, ol {
 }
 
 .tech-card {
-  background: #ffffff;
+  background: var(--color-surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
@@ -1360,8 +1365,8 @@ ul, ol {
 .tech-badge {
   align-self: flex-start;
   padding: 3px 8px;
-  background: var(--color-eco-green-light);
-  color: var(--color-eco-emerald);
+  background: var(--color-eco-green-bg);
+  color: var(--color-eco-green);
   border-radius: var(--radius-pill);
   font-size: var(--font-size-2xs);
   font-weight: var(--weight-bold);
@@ -1371,6 +1376,7 @@ ul, ol {
 .tech-title {
   font-size: var(--font-size-base);
   font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
   margin-bottom: var(--space-1);
 }
 
@@ -1399,7 +1405,7 @@ ul, ol {
    SECTION 8: SOCIAL PROOF & TESTIMONIALS
    ========================================================================== */
 .testimonials-section {
-  background: var(--color-surface-soft);
+  background: var(--color-canvas-alt);
 }
 
 .testimonials-grid {
@@ -1409,7 +1415,7 @@ ul, ol {
 }
 
 .testimonial-card {
-  background: #ffffff;
+  background: var(--color-surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: var(--space-5);
@@ -1449,12 +1455,13 @@ ul, ol {
   justify-content: center;
   font-weight: var(--weight-bold);
   font-size: var(--font-size-xs);
-  color: var(--color-brand-primary);
+  color: var(--color-text-primary);
 }
 
 .author-info h4 {
   font-size: var(--font-size-xs);
   font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
 }
 
 .author-info p {
@@ -1471,7 +1478,7 @@ ul, ol {
   gap: clamp(1rem, 3vw, 2.5rem);
   margin-top: var(--space-8);
   padding: var(--space-3) var(--space-5);
-  background: #ffffff;
+  background: var(--color-surface-card);
   border-radius: var(--radius-pill);
   border: 1px solid var(--border-subtle);
 }
@@ -1502,7 +1509,7 @@ ul, ol {
 }
 
 .faq-item {
-  background: #ffffff;
+  background: var(--color-surface-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -1531,6 +1538,7 @@ ul, ol {
   justify-content: center;
   transition: transform var(--transition-base), background var(--transition-base), color var(--transition-base);
   flex-shrink: 0;
+  color: var(--color-text-secondary);
 }
 
 .faq-icon svg {
@@ -1540,8 +1548,8 @@ ul, ol {
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
-  background: var(--color-brand-primary);
-  color: #ffffff;
+  background: var(--color-brand-button-bg);
+  color: var(--color-brand-button-text);
 }
 
 .faq-answer {
@@ -1735,7 +1743,7 @@ ul, ol {
 }
 
 .modal-container {
-  background: #ffffff;
+  background: var(--modal-bg);
   border-radius: var(--radius-xl);
   max-width: 420px;
   width: 100%;
@@ -1743,6 +1751,8 @@ ul, ol {
   box-shadow: var(--shadow-elevated);
   position: relative;
   transform: translateY(16px);
+  border: 1px solid var(--border-medium);
+  color: var(--color-text-primary);
   transition: transform var(--transition-smooth);
 }
 
@@ -1774,6 +1784,7 @@ ul, ol {
 .modal-title {
   font-size: var(--font-size-md);
   font-weight: var(--weight-bold);
+  color: var(--color-text-primary);
   margin-bottom: 3px;
 }
 
@@ -1791,13 +1802,16 @@ ul, ol {
   display: block;
   font-size: var(--font-size-2xs);
   font-weight: var(--weight-semibold);
+  color: var(--color-text-primary);
   margin-bottom: 3px;
 }
 
 .modal-form-input {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid var(--border-medium);
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--input-text);
   border-radius: var(--radius-md);
   font-size: var(--font-size-xs);
   outline: none;
@@ -1805,7 +1819,7 @@ ul, ol {
 }
 
 .modal-form-input:focus {
-  border-color: var(--color-brand-primary);
+  border-color: var(--color-eco-green);
 }
 
 /* ==========================================================================
